@@ -11,7 +11,6 @@ use App\Services\Editors\ProductEditService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use App\Serializers\CategorySerialize;
 
 class ProductController extends BackendController
 {
@@ -63,14 +62,15 @@ class ProductController extends BackendController
     }
 
     /**
-     * Remove the specified resource from storage.
+     * @param Product $product
      *
-     * @param  \App\Models\Shop\Product  $category
-     * @return \Illuminate\Http\Response
+     * @return JsonResponse
      */
-    public function destroy(Product $category)
+    public function destroy(Product $product)
     {
-        //
+        $product->delete();
+
+        return new JsonResponse([true]);
     }
 
     /**

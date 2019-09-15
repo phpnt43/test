@@ -59,14 +59,15 @@ class CategoryController extends BackendController
     }
 
     /**
-     * Remove the specified resource from storage.
+     * @param Category $category
      *
-     * @param  \App\Models\Shop\Category  $category
-     * @return \Illuminate\Http\Response
+     * @return JsonResponse
      */
     public function destroy(Category $category)
     {
-        //
+        $category->delete();
+
+        return new JsonResponse([true]);
     }
 
 }
