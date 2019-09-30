@@ -20,4 +20,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 
+include __DIR__.'/frontend.php';
 include __DIR__.'/backend.php';

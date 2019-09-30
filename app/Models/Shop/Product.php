@@ -44,7 +44,7 @@ class Product extends Model
             ->orderBy('id');
 
         if ($request->get('category_id')) {
-            $query->join('products_categories', function($query) use ($request){
+            $query->innerjoin('products_categories', function($query) use ($request){
                 $query->on('products_categories.product_id', '=', 'products.id');
                 $query->where('category_id', '=',$request->get('category_id'));
             });

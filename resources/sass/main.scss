@@ -1,3 +1,14 @@
 dialog.show {
   z-index: 10000;
 }
+@font-face{
+  font-family: Cactus;
+  font-weight: bold;
+  src: url("/fonts/Cactus.otf") format("opentype");
+
+}
+.fontPreload{
+  font-family: Cactus;
+  position: absolute;
+  left:-100px;
+}

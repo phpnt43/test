@@ -1,4 +1,4 @@
-webpackJsonp([3],{
+webpackJsonp([4],{
 
 /***/ "./node_modules/async-validator/es/index.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -98942,27 +98942,35 @@ requireComponent.keys().forEach(function (fileName) {
 
 "use strict";
 /* harmony default export */ __webpack_exports__["a"] = ({
-    'home': function home() {
-        return new Promise(function (resolve) {
-            __webpack_require__.e/* require.ensure */(0).then((function (require) {
-                resolve(__webpack_require__("./resources/js/view/backend/Home.vue"));
-            }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
-        });
-    },
-    'categories': function categories() {
-        return new Promise(function (resolve) {
-            __webpack_require__.e/* require.ensure */(2).then((function (require) {
-                resolve(__webpack_require__("./resources/js/view/backend/categories/Categories.vue"));
-            }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
-        });
-    },
-    'products': function products() {
-        return new Promise(function (resolve) {
-            __webpack_require__.e/* require.ensure */(1).then((function (require) {
-                resolve(__webpack_require__("./resources/js/view/backend/products/Products.vue"));
-            }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
-        });
-    }
+  'home': function home() {
+    return new Promise(function (resolve) {
+      __webpack_require__.e/* require.ensure */(0).then((function (require) {
+        resolve(__webpack_require__("./resources/js/view/backend/Home.vue"));
+      }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+    });
+  },
+  'categories': function categories() {
+    return new Promise(function (resolve) {
+      __webpack_require__.e/* require.ensure */(2).then((function (require) {
+        resolve(__webpack_require__("./resources/js/view/backend/categories/Categories.vue"));
+      }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+    });
+  },
+  'products': function products() {
+    return new Promise(function (resolve) {
+      __webpack_require__.e/* require.ensure */(1).then((function (require) {
+        resolve(__webpack_require__("./resources/js/view/backend/products/Products.vue"));
+      }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+    });
+  },
+
+  'snake': function snake() {
+    return new Promise(function (resolve) {
+      __webpack_require__.e/* require.ensure */(3).then((function (require) {
+        resolve(__webpack_require__("./resources/js/view/frontend/games/Snake/Snake.vue"));
+      }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+    });
+  }
 });
 
 /***/ }),

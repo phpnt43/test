@@ -1,0 +1,14 @@
+.game-snake{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+
+  #snake {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
+}
