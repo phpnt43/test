@@ -177,6 +177,7 @@
       },
 
       render(){
+        console.log(123);
         window.requestAnimationFrame(() => {
           this.ctx.clearRect(0, 0, this.width, this.height);
 
